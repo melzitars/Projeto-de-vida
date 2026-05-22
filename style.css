@@ -1,19 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
-  --cor-de-fundo: #360360d3;
-  --verde: #b49cc3;
+  --cor-de-fundo: #1e1e1e;
+  --verde: #6fff57;
   --branco: #ffffff;
-  --botao-ativo: #a8a2ec;
-  --botao-inativo: rgba(0, 0, 0, 0.5);
+  --botao-ativo: #3a375e;
+  --botao-inativo: rgba(58, 55, 94, 0.5);
   --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body {
   background-color: var(--cor-de-fundo);
   color: var(--branco);
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .conteudo-principal {
@@ -21,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1600px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -29,7 +28,7 @@ body {
 .titulo-principal {
   text-align: left;
   width: 100%;
-  font-size: 38px;
+  font-size: 32px;
 }
 
 .titulo-principal span {
@@ -37,22 +36,23 @@ body {
 }
 
 .botao {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--botao-inativo);
   color: var(--branco);
   display: flex;
   justify-content: center;
   padding: 1em;
-  font-size: 24px;
+  font-size: 18px;
   align-items: center;
   width: 100%;
   border-bottom: 4px solid var(--botao-ativo);
-  border-left: 4px solid var(--botao-ativo);
-  border-right: 4px solid var(--botao-ativo);
-  border-top: 8px solid var(--botao-ativo);
+  border-left: 2px solid var(--botao-ativo);
+  border-right: 2px solid var(--botao-ativo);
+  border-top: none;
 }
+
 .botao:first-child {
-  border-radius: 50px 50px 0 0;
+  border-radius: 40px 40px 0 0;
 }
 
 .botoes {
@@ -62,21 +62,12 @@ body {
   .botoes {
     display: flex;
   }
-}
-@media screen and (min-width: 768px) {
-  /* Código omitido */
-
-  .botao:last-child {
-    border-radius: 0 40px 40px 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  /* Código omitido */
-
   .botao:first-child {
-    border-radius: 40px 0 0 40px; }
+    border-radius: 40px 0 0 0;
   }
-.ativo {
-  background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--verde);
+
+.botao:first-child {
+    border-radius: 40px 0 0 0;
+  }
+}
 }
