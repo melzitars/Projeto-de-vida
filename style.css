@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-  --cor-de-fundo: #140341;
-  --verde: #6fff57;
-  --branco: #ffffff;
+  --cor-de-fundo: #0e0230;
+  --vermeio: #550404;
+  --azur: #b4d0e7;
   --botao-ativo: #3a375e;
   --botao-inativo: rgba(58, 55, 94, 0.5);
   --texto-fundo: rgba(58, 55, 94, 0.3);
@@ -11,7 +12,7 @@
 
 body {
   background-color: var(--cor-de-fundo);
-  color: var(--branco);
+  color: var(--azur);
   font-family: "Raleway", sans-serif;
 }
 
@@ -32,13 +33,13 @@ body {
 }
 
 .titulo-principal span {
-  color: var(--verde);
+  color: var(--vermeio);
 }
 
 .botao {
   font-family: "Poppins", sans-serif;
   background-color: var(--botao-inativo);
-  color: var(--branco);
+  color: var(--azur);
   display: flex;
   justify-content: center;
   padding: 1em;
@@ -63,11 +64,14 @@ body {
     display: flex;
   }
   .botao:first-child {
-    border-radius: 40px 0 0 0;
+    border-radius: 40px 0 0 20px;
   }
 
 .botao:last-child {
-    border-radius: 0 0 40px 0;
+    border-radius: 0 20px 40px 0;
   }
+  .ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--vermeio);
 }
 }
