@@ -118,7 +118,7 @@ body {
 }
 
 .contador-digito-texto {
-    color: var(--verde);
+    color: var(--vermeio);
     font-size: 20px;
     margin: 0;
 
@@ -130,10 +130,10 @@ body {
     }
 
     .botao:first-child {
-        border-radius: 40px 0 0 0;
+        border-radius: 60px 0 0 20px;
     }
 
     .botao:last-child {
-        border-radius: 0 40px 0 0;
+        border-radius: 0 60px 20px 0;
  } 
 } }
